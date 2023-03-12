@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // changed
+import React, { useState } from 'react';  
 
 import './App.css';
 
@@ -10,7 +10,7 @@ import Search from './components/Search';
 import axios from 'axios'
 
 function App () {
-  // new
+
   const [results, setResults] = useState([]);
 
   const search = async (country, points, query) => {

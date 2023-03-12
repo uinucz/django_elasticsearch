@@ -8,8 +8,8 @@ import { AsyncTypeahead } from 'react-bootstrap-typeahead';
 
 
 function Search ({search}) {
-  const [isLoading, setLoading] = useState(false); // new
-  const [options, setOptions] = useState([]); // new
+  const [isLoading, setLoading] = useState(false);  
+  const [options, setOptions] = useState([]);  
 
   const wineSearchWord = async query => {
     if (query.length < 3) {

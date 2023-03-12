@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { sanitize } from 'dompurify'; // new
-import { Card } from 'react-bootstrap'; // new
+import { sanitize } from 'dompurify'; 
+import { Card } from 'react-bootstrap'; 
 
-// changed
+
 function ResultList ({ results }) {
-  // new
+
   const resultItems = results.map(result =>
     <Card className='mb-3' key={result.id}>
       <Card.Body>
@@ -23,7 +23,7 @@ function ResultList ({ results }) {
     </Card>
   );
 
-  // changed
+
   return (
     <div>
       {!results && <p>Search using the left panel.</p>}
